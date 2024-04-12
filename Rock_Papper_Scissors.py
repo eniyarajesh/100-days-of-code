@@ -1,3 +1,4 @@
+
 import random
 
 rule=["rock","papper","scissor"]
