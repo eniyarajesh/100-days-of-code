@@ -15,8 +15,7 @@ password = []
 #generate letters
 for i in range(req_letter):
     password.append(random.choice(letters))
-
-
+           
 #generate symbols
 for i in range(req_symbols):
     password.append(random.choice(symbols))
