@@ -7,7 +7,15 @@ lives = 6
 print("Welcome to Hangman out!!")
 chosen_word = random.choice(word_list)
 print(chosen_word)
-
+hangman = [
+    " ___________",
+    "|     |",
+    "|    ( )",
+    "|    \|/",
+    "|     |",
+    "|    / \ ",
+    "|",
+]
 string1 = ""
 for i in range(len(chosen_word)):
     string1 += "_"
@@ -36,6 +44,7 @@ while not game_over :
         print(f"Available lives: {lives}")
         if lives == 0:
             print("You lose")
+            print("\n".join(hangman))
             game_over = True
 
     if "_" not in string:
