@@ -1,6 +1,7 @@
 import random
 
-word_list = ["apple","balloon","camel"]
+word_list = ["apple", "balloon", "camel", "bridge", "lantern", "garden", "marble", "voyage", "frozen", "horizon", "tunnel", "magnet", "engine", "helmet",
+             "knight", "volcano", "treasure", "curtain", "portrait", "crystal", "pirate", "planet", "sunrise"]
 
 lives = 6
 
@@ -16,6 +17,7 @@ hangman = [
     "|    / \ ",
     "|",
 ]
+
 string1 = ""
 for i in range(len(chosen_word)):
     string1 += "_"
@@ -42,13 +44,15 @@ while not game_over :
     if guess not in chosen_word:
         lives -= 1
         print(f"Available lives: {lives}")
+        print("")
         if lives == 0:
-            print("You lose")
+            print("************ You lose ************")
+            print("")
             print("\n".join(hangman))
             game_over = True
 
     if "_" not in string:
         game_over = True
-        print("You'r win!!")
+        print("************ You'r win!! ************")
     
     
