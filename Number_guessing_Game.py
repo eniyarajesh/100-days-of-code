@@ -1,5 +1,10 @@
 import random
-from art import guess_number
+logo = """
+  / _ \_   _  ___  ___ ___  /__   \ |__   ___    /\ \ \_   _ _ __ ___ | |__   ___ _ __ 
+ / /_\/ | | |/ _ \/ __/ __|   / /\/ '_ \ / _ \  /  \/ / | | | '_ ` _ \| '_ \ / _ \ '__|
+/ /_\\| |_| |  __/\__ \__ \  / /  | | | |  __/ / /\  /| |_| | | | | | | |_) |  __/ |   
+\____/ \__,_|\___||___/___/  \/   |_| |_|\___| \_\ \/  \__,_|_| |_| |_|_.__/ \___|_| 
+"""
 
 num = random.randint(1,100)
 
@@ -27,7 +32,7 @@ def attempt_cal(attempts,n):
         print(f"Sorry, you ran out of attempts. The number was {n}.")
 
 def num_guess(num):
-    print(guess_number)
+    print(logo)
     print("Welcome to the Number Guessing Game!!")
     print("I'm thinking of a number between 1 and 100")
     print("If you guess the number correctly, you win!!")
